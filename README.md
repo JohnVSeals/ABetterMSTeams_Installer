@@ -10,3 +10,9 @@ A Better MS Teams Installer is meant for organizations that have to install New 
 1) Host all files (MSTeams-x64.msix, NewTeamsApp_Installer.ps1, and Teamsbootstrapper.exe) in the same folder.
 
 2) Run NewTeamsApp_Installer.ps1 as Admin
+
+#Exit Codes
+1) Exit 0 - Successful
+2) Exit 1 - Failed
+3) Exit 2 - Provisioned (May Require Reboot)
+4) Exit 3 - Scheduled Task Created (Requires Reoot)

@@ -308,7 +308,7 @@ If ($windowsInfo.OsVersion -lt "10.0.19041") {
 
         Write-Log -LogPath $logPath -Message "Teams Provisioned" -Level Success
 
-        Exit 0
+        Exit 2
 
     } catch {
 
@@ -344,7 +344,7 @@ If ($windowsInfo.OsVersion -lt "10.0.19041") {
 
         Start-ScheduledTask -TaskName "New Teams Install (User)" -AsJob
 
-       Exit 0
+       Exit 3
 
     }
 
