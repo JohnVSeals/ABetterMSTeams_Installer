@@ -298,7 +298,7 @@ If ($windowsInfo.OsVersion -lt "10.0.19041") {
 
     Write-Log -LogPath $logPath -Message "Registry: Setting key to allow sideloading apps." -Level Info
 
-    New-ItemProperty -Path "hklm:\\SOFTWARE\Microsoft\Windows\CurrentVersion\AppModelUnlock" -Name "AllowAllTrustedApps" -Value "1" -Force
+    New-ItemProperty -Path "HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\AppModelUnlock" -Name "AllowAllTrustedApps" -Value "1" -PropertyType "DWord" -Force
 
     Write-Log -LogPath $logPath -Message "Attempt: Provisioning teams." -Level Info
 
